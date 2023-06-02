@@ -1,0 +1,121 @@
+.product {
+  position: relative;
+}
+
+.product-image {
+  width: 300px;
+  height: 360px;
+  
+}
+
+.product-details {
+  position: relative;
+  top: -120px;
+  z-index: 1;
+  color: white;
+  padding: 10px;
+}
+
+.product-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 360px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer; /* Añade un cursor de puntero al fondo transparente */
+}
+
+.product:hover .product-background {
+  opacity: 1;
+}
+
+.product-title,
+.product-description,
+.product-price {
+  color: #fff;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.product-modal-title,
+.product-modal-text {
+  color: white;
+}
+.product-modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.modal-header {
+  display: none;
+}
+/* Estilos CSS para ajustar el tamaño del pop-up */
+.modal-dialog {
+  max-width: 400px; /* Ajusta el ancho máximo del pop-up según tus necesidades */
+}
+
+.product-modal-image {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen del pop-up */
+  height: auto; /* Ajusta la altura automáticamente según el ancho */
+}
+.product-title {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  left: 12px;
+}
+
+.modal-precio{
+  position: absolute;
+  top: 493px;
+  right: 20px;
+}
+
+.product-description {
+  position: relative;
+  z-index: 1;
+  left: 12px;
+  top: 50px;
+}
+
+.product-price {
+  position: relative;
+  z-index: 1;
+  top: 10px;
+  left: 200px;
+}
+.fondo {
+  position: absolute;
+  margin-top: -67.8px;
+  width: 300px;
+  height: 68px; 
+  z-index: 1;
+  background: #1D1D1B;
+  opacity: 0.54;
+}
+
+@media (min-width: 770px) and (max-width: 991px) {
+  .product-background {
+    width: 216px;
+    height: 360px;
+  }
+  .product-price{
+    left: 130px;
+  }
+  .fondo{
+    width: 216px;
+  }
+}
+
+@media (min-width: 991px) and (max-width:1199px){
+  .fondo{
+    width: 296px;
+  }
+  .product-background{
+    width: 296px;
+  }
+}
