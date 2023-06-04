@@ -3,8 +3,8 @@
 }
 
 .product-image {
-  width: 300px;
-  height: 360px;
+  width: 100%;
+  height: 100%;
   
 }
 
@@ -20,12 +20,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 360px;
+  width: 416px;
+  height: 499px;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   transition: opacity 0.3s ease;
-  cursor: pointer; /* Añade un cursor de puntero al fondo transparente */
+  cursor: pointer; 
 }
 
 .product:hover .product-background {
@@ -53,25 +53,25 @@
 .modal-header {
   display: none;
 }
-/* Estilos CSS para ajustar el tamaño del pop-up */
+
 .modal-dialog {
-  max-width: 400px; /* Ajusta el ancho máximo del pop-up según tus necesidades */
+  max-width: 400px; 
 }
 
 .product-modal-image {
-  max-width: 100%; /* Ajusta el ancho máximo de la imagen del pop-up */
-  height: auto; /* Ajusta la altura automáticamente según el ancho */
+  max-width: 100%; 
+  height: auto; 
 }
 .product-title {
   position: relative;
   z-index: 1;
-  top: 50px;
+  top: 40px;
   left: 12px;
 }
 
 .modal-precio{
   position: absolute;
-  top: 493px;
+  top: 483px;
   right: 20px;
 }
 
@@ -79,29 +79,57 @@
   position: relative;
   z-index: 1;
   left: 12px;
-  top: 50px;
+  top: 40px;
 }
 
 .product-price {
   position: relative;
   z-index: 1;
-  top: 10px;
-  left: 200px;
+  top: 0;
+  left: 330px;
 }
 .fondo {
-  position: absolute;
-  margin-top: -67.8px;
-  width: 300px;
-  height: 68px; 
+  margin-top: -88px;
+  width: 100%;
+  height: 88px; 
   z-index: 1;
   background: #1D1D1B;
   opacity: 0.54;
 }
 
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) rotate(-180deg);
+}
+
+
+
+@media (max-width: 769px) {
+  .product-background {
+    width: 100%;
+    height: 619px;
+  }
+  .product-price{
+    left: 400px;
+  }
+}
+
+
+.carousel{
+  margin-top: 60px;
+}
+
+footer{
+  margin-top: 60px;
+}
+
+
 @media (min-width: 770px) and (max-width: 991px) {
   .product-background {
-    width: 216px;
-    height: 360px;
+    width: 100%;
+    height: 259px;
   }
   .product-price{
     left: 130px;
@@ -111,11 +139,31 @@
   }
 }
 
+
+
+
 @media (min-width: 991px) and (max-width:1199px){
   .fondo{
-    width: 296px;
+    width: 100%;
   }
   .product-background{
     width: 296px;
+    height: 355px;
+  }
+  .product-price{
+    left: 200px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width:1399px){
+  .product-background{
+    width: 100%;
+    height: 427px;
+  }
+  .fondo{
+    width: 356px;
+  }
+  .product-price{
+    left: 260px;
   }
 }

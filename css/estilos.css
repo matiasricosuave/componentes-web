@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'North Carossela';
+    src: url(../fonts/North\ Carossela\ 400.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pavanam';
+    src: url(../fonts/Pavanam-Regular.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3,h1,h2{
+    font-family: 'North Carossela', sans-serif;
+}
+
+h6,p{
+    font-family: 'Panavam';
+}
+
+body {
+    background: #000;
+}
+
+p{
+    color: #ffff;
+    font-family: 'Pavanam';
+}
+
+.seccion-oscura {
+    background-color: #141414;
+}
+
+.seccion-roja {
+    background-color: #771011;
+}
+
+/*Barra de navegacion*/
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link {
+    transition: 300ms;
+    line-height: 1.4rem;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.navbar .navbar-nav .notification {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-item:hover {
+    background-color: #771011;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.personal):not(.notification-icon):hover .nav-link {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.menu):not(.reservas):not(.inicio):hover .nav-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.personal):not(.menu):not(.reservas):not(.inicio):hover .nav-link {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand img {
+    padding-left: 50px;
+}
+
+
+
+
+.menu-reserva{
+    margin-top: 80px;
+  }
+  .boton{
+    width:400px;
+    height:45px;
+    background-color:  #771011;
+    border: none;
+  }
+   .bebidas{
+    margin-top: 80px;
+   }
+
+
+   
+
+/* footer */
+
+footer {
+    height: 315px;
+}
+
+footer .contenedor {
+    max-width: 900px;
+    text-align: center;
+}
+
+footer .contenedor h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'North Carossela', sans-serif;
+}
+
+footer .contenedor p {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Pavanam', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+footer .contenedor img {
+    height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand img {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer .contenedor img {
+        height: 20px;
+    }
+
+    footer .contenedor p {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 905px) {
+    .navbar .navbar-nav .nav-link {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .navbar-brand img {
+        padding-left: 20px;
+    }
+}

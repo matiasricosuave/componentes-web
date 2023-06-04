@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+    font-family: 'North Carossela';
+    src: url(../fonts/North\ Carossela\ 400.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Pavanam';
+    src: url(../fonts/Pavanam-Regular.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3,h1,h2{
+    font-family: 'North Carossela', sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+.seccion-oscura {
+    background-color: #141414;;
+}
+
+.seccion-roja {
+    background-color: #771011;
+}
+
+/*Barra de navegacion*/
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link {
+    transition: 300ms;
+    line-height: 1.4rem;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.navbar .navbar-nav .notification {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-item:hover {
+    background-color: #771011;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.personal):not(.notification-icon):hover .nav-link {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.menu):not(.reservas):not(.inicio):hover .nav-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item:not(.personal):not(.menu):not(.reservas):not(.inicio):hover .nav-link {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand img {
+    padding-left: 50px;
+}
+
+
+
+
+.menu-reserva{
+    margin-top: 80px;
+  }
+  .boton{
+    width:400px;
+    height:45px;
+    background-color:  #771011;
+    border: none;
+  }
+   .bebidas{
+    margin-top: 80px;
+   }
+
+
+   
+
+/* footer */
+
+footer {
+    height: 315px;
+}
+
+footer .contenedor {
+    max-width: 900px;
+    text-align: center;
+}
+
+footer .contenedor h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 60px;
+    letter-spacing: 5px;
+    font-family: 'North Carossela', sans-serif;
+}
+
+footer .contenedor p {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'Pavanam', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+footer .contenedor img {
+    height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar-brand img {
+        padding-left: 0;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer .contenedor img {
+        height: 20px;
+    }
+
+    footer .contenedor p {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 905px) {
+    .navbar .navbar-nav .nav-link {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .navbar-brand img {
+        padding-left: 20px;
+    }
+}
+    h2,p{
+        color: #FFFFFF;
+    }
+
+    p{
+        font-family: 'Pavanam';
+    }
+
+    .btn-group{
+        width: 100%;
+    }
+
+    .btn-custom{
+        background-color: #771011;
+        color: #FFFFFF;
+        font-family: 'Pavanam';
+    }
+
+
+
+    .dropdown-menu{
+        width: 100%;
+    }
+
+    .custom-dropdown-item {
+        background-color: #141414;
+    }
+    .dropdown-item{
+        color: #FFFFFF;
+        
+    }
+    .dropdown-item:hover {
+    background-color: #C0BFB2;
+    }
+
+    footer{
+        margin-top: 240px;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md seccion-oscura">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img class="logo-Restaurante" src="img/LogoAlquimia.svg" alt="logo del pagina web" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-Toggler">
+                    <ul class="navbar-nav ms-auto d-flex justify-content-md-center align-items-center">
+                        <li class="nav-item inicio">
+                            <a class="nav-link active" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        </li>
+                        <li class="nav-item menu">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Menú</a>
+                        </li>
+                        <li class="nav-item reservas">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Reservas</a>
+                        </li>
+                        <li class="nav-item personal">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Personal <br> Alquimia</a>
+                        </li>
+                        <li class="nav-item notification-icon">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"><img src="img/icon _bell notification_.svg" alt="" class="notification"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+
+      <div class="container mt-5">
+        <h2>Selecciona la fecha para visualizar el menu del dia</h2>
+      </div>
+      <div class="container mt-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia perferendis officiis totam aspernatur, maiores consequuntur corrupti? Ipsa illo eum exercitationem. Soluta nam, sit quas nobis quam qui ratione deleniti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos deserunt nostrum quis, blanditiis beatae excepturi pariatur! Ullam exercitationem totam atque architecto reiciendis deleniti ex. Consequatur doloremque corrupti accusamus facilis rerum.</p>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="btn-group">
+              <button type="button" class="btn dropdown-toggle btn-custom text-start" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mes
+              </button>
+              <div class="dropdown-menu custom-dropdown-item">
+                <a class="dropdown-item" href="#">Febrero</a>
+                <a class="dropdown-item" href="#">Marzo</a>
+                <a class="dropdown-item" href="#">Abril</a>
+                <a class="dropdown-item" href="#">Mayo</a>
+                <a class="dropdown-item" href="#">Junio</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle btn-custom text-start" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Día
+              </button>
+              <div class="dropdown-menu custom-dropdown-item">
+                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="#">7</a>
+                <a class="dropdown-item" href="#">12</a>
+                <a class="dropdown-item" href="#">21</a>
+                <a class="dropdown-item" href="#">29</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <footer class="seccion-roja d-flex flex-column align-items-center">
+        <div class="contenedor">
+            <h3>ACERCA DE ALQUIMIA</h3>
+            <img src="img/detalle.svg" alt="detalle">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                dolore magna aliquam erat volutpat. Ut wisi enim ad
+                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in
+                hendrerit in vulputate
+            </p>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
